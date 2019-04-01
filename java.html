@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript</title>
+</head>
+<body>
+<h1>My First java script</h1>
+	
+	<button type="button" onclick="document.getElementById('demo').innerHTML = Date()">display the time and date.</button>
+
+
+<p id="demo"></p>
+	<hr>
+	
+	
+	<button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulboff.gif'">Turn on the light</button>
+
+<img id="myImage" src="https://www.w3schools.com/js/pic_bulboff.gif" style="width:100px">
+
+<button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulboff.gif'">Turn off the light</button><hr>
+	<p id="min"></p>
+<script>
+	
+	document.getElementById("min").innerHTML=5+6;
+	
+	
+	</script><hr>
+	<script>
+	document.write(5+5);
+	</script><hr>
+	
+	<h2>Alert</h2>
+	<button type="button" onclick="document.write(5+5)">Try it</button><hr>
+	
+	
+	<script>
+	window.alert(5+6);
+	</script><hr>
+	
+	<h2>JavaScript Statements</h2>
+	
+	<p id="add"></p>
+	<script>
+	var a,b,c;
+	a=10;
+	b=2;
+	c=a+b;
+	document.getElementById("add").innerHTML=c;
+	</script><hr>
+	
+	<h2>function</h2>
+	
+	
+
+	<button type="button" onclick="myFunction()">Click Me!</button>
+
+	<p id="demo1"></p>
+    <p id="demo2"></p>
+
+	<script>
+	
+		function myFunction(){
+			
+			document.getElementById("demo1").innerHTML="Hello Dolly";
+			document.getElementById("demo2").innerHTML="How are you?";
+			
+		}
+	
+	
+	
+	</script><hr>
+	<h2>
+		JavaScript is case sensitive.
+	</h2>
+	<p>Try lastName to lastname</p>
+	<p id="do"></p>
+	<script>
+	var lastname,lastName;
+		
+	
+		
+		lastName="sajjad";
+		lastname="chowdhury";
+		document.getElementById("do").innerHTML=lastName;
+	
+	</script><hr>
+	<p id="add"></p>
+	
+	<h2>The +=  operator</h2>
+	<p id="need"></p>
+	<script>
+	var x=10;
+		x += 5;
+	document.getElementById("need").innerHTML=x;
+	
+	
+		
+		var text1="sajjad";
+		var text2="eliyas";
+		var text3=text1 + " " + text2;
+		document.getElementById("add").innerHTML=text1 + " " + text2;
+	</script><hr>
+	<h2>variable</h2>
+	
+	<h3>add</h3>
+	<p id="addition"></p>
+	<h3>sub</h3>
+	<p id="substruction"></p>
+	<h3>div</h3>
+	<p id="devide"></p>
+	<h3>mul</h3>
+	<p id="multiplication"></p>
+	<script>
+		var q=50;
+		var w=20;
+		var e=q+w;
+		document.getElementById("addition").innerHTML=e;
+	
+	var x=8;
+		var y=6;
+		var z=x-y;
+		document.getElementById("substruction").innerHTML=z;
+	
+		
+		
+		var s=8;
+		var t=2;
+		var u=s/t;
+		document.getElementById("devide").innerHTML=u;
+		
+		
+		var c=3;
+		var v=6;
+		var b=c*v;
+		document.getElementById("multiplication").innerHTML=b;
+		
+	
+	</script>
+	<h3>
+	many operation</h3>
+	<p id="many"></p>
+	<h3>few operator</h3>
+	<p id="few"></p>
+	<script>
+	document.getElementById("many").innerHTML=100+3-8;
+		document.getElementById("few").innerHTML=2+68-70/30-20*2;
+	</script><hr>
+	<h2>javascript typeof</h2>
+	<p id="type"></p>
+	<script>
+	document.getElementById("type").innerHTML=
+		typeof "lili"+"<br>"+
+		typeof 12.45 +"<br>"+
+		typeof true + "<br>"+
+		typeof false + "<br>"+
+		typeof y;
+	</script>
+<hr>
+	
+	<h2>javascript arrays</h2>
+	<p id="array"></p>
+	<script>
+	var cars=["noah","volvo","bmw"];
+		document.getElementById("array").innerHTML=cars[1];
+	
+	</script>
+	<h2>objects</h2>
+	<p id="object"></p>
+	<script>
+	var person={firstname:"Taj",lastname:"uddin",age:40, weight:78};
+	document.getElementById("object").innerHTML=age;
+	
+	</script><hr>
+	
+	<h3>boolean</h3>
+	<p id="sajon"></p>
+	<script>
+	
+	var x=5;
+		var y=6;
+		var z=6;
+		document.getElementById("sajon").innerHTML=
+			(y==z) + "<br>" + (y==x);
+	
+	</script><hr>
+	
+	<h2>functions</h2>
+	<p id="sad"></p>
+	<script>
+	function myFunction(p1,p2){
+		
+		return(p1*p2);
+		
+	}
+		
+		document.getElementById("sad").innerHTML=myFunction(4,3);
+	
+	
+	</script>
+	
+	<h2>celsious to fahrenheit</h2>
+	<p id="happy"></p>	
+	
+	<script>
+	
+	function toCelsious(fahrenheit){
+		
+		
+		return(5/9)*(fahrenheit-32);
+		
+	}
+		document.getElementById("happy").innerHTML=toCelsious(60);
+	
+	
+	</script><hr>
+	
+	
+	<h2>new date</h2>
+	<p id="new"></p>
+	<script>
+	
+		document.getElementById("new").innerHTML=Date();
+	
+	</script><hr>
+	<h2>iso date</h2>
+	<p id="set"></p>
+	<script>
+	var d=new Date("2016");
+		document.getElementById("set").innerHTML=d;
+		
+	
+	</script><hr>
+	<h2>getday</h2>
+	<p id="day"></p>	
+	<script>
+	var s=new Date();
+		document.getElementById("day").innerHTML=s.getDay();
+	
+	</script><hr>
+	
+	<h2>math</h2>
+	<p id="m"></p>
+	<script>
+	document.getElementById("m").innerHTML=Math.sqrt(4);
+		
+	</script><hr>
+	
+	<h2>display boolean</h2>
+	<button onclick="myFunction()">Try it</button>
+	
+	
+	<p id="bl"></p>
+	<script>
+	function myFunction(){
+		var x= " " ;
+		
+	
+		document.getElementById("bl").innerHTML=Boolean(x);
+		
+	}
+	</script><hr>
+	
+	<h2>timebased greeting.</h2>
+	<button onclick="myFunction()">Try it</button>
+	
+	<p id="time"></p>
+	
+	<script>
+	
+	function myFunction(){
+		
+		var greeting;
+		var time= new Date().getHours();
+		if(time<10){
+			greeting="Good morning";
+			
+			
+		}
+		else if (time<20){
+			
+			greeting="Good day";
+			
+		}
+		else{
+			
+			greeting="Good evening";
+		}
+		
+		document.getElementById("time").innerHTML=greeting;
+		
+	}
+	
+	</script><hr>
+	<h2>getday</h2>
+	<p id="day"></p>
+	<script>
+	var day;
+		switch(new Date().getDay()){
+				
+				case 0:
+				day="Saturday";
+				break;
+						
+			  case 1:
+				day="Sunday";
+				break;
+						
+								  
+		     case 2:
+				day="Monday";
+				break;
+				
+				
+				case 3:
+				day="Tuesday";
+				break;
+						
+				
+				case 4:
+				day="wednesday";
+				break;
+						
+				
+				case 5:
+				day="Thursday";
+				break;
+						
+				
+				case 6:
+				day="Friday";
+				break;
+						
+				
+				
+						}
+		
+		document.getElementById("day").innerHTML="Today is:" + day;	
+	
+	</script><hr>
+	<h2>Loops</h2>
+	<p id="din"></p>
+	
+	<script>
+	var cars=["volvo","noah","fiat","bmw","audi","saab","ford"]
+	
+	var text="";
+		var i;
+		for(i=0;i<cars.length;i++){
+			
+			text += cars[i] + "<br>";
+			
+		}
+		document.getElementById("din").innerHTML=text;
+		
+	</script><hr>
+	<h2>The loops</h2>
+	<p id="man"></p>
+	<script>
+	
+	var text=" ";
+
+		
+		var i;
+		for(i=0; i<5;i++)
+		{
+			text += "The number is" + i + "<br>";
+			
+			
+		}
+		
+		document.getElementById("man").innerHTML=text;
+	</script><hr>
+	
+	
+ <h2>while loop</h2>
+	<p id="xlus"></p>
+	<script>
+		
+	
+	while(i < 10){
+		
+		text += "The number is" + i;
+		i++;
+	}
+		document.getElementById("xlus").innerHTML=text;
+		
+		
+	</script>
+	<p id="css">  </p>
+	<script> 
+		<p>  </p>
+	
+		 do {
+      code block to be executed
+      }
+      while (condition);
+	
+	document.getElementById("css").innerHTML=text;
+
+	</script>
+	
+	
+</body>
+
+
+</html>
